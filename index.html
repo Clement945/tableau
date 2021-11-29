@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structure html d'un tableau</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <!--CSS reset avec Google fonts-->
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">-->
+</head>
+<body>
+
+    <header>
+        <h1>
+            <span class="material-icons">
+                trending_up
+                </span>Structure d'un tableau html</h1>
+    </header>
+
+    <main>
+        <!-- ici on structure le tableau   (ctrl + /) en selectionnant tous et créer un commentaire -->
+        
+            <div class="inner-table-large inner-table-regular inner-table-small" role="region">          <!--donne un sens de section sans l'entete et class donne un nom-->
+                 <table>  <!--display table -->
+                    <caption>Le top 10 des classements</caption>
+                    <!-- partie header -->
+                    <thead> <!--affiche au milieu le texte-->
+                        <tr>
+                            <th>
+                                <span class="material-icons" aria-hidden="true">
+                                    lightbulb
+                                    </span>
+                                classements</th>
+                            <th>langage</th>
+                            <th>type</th>
+                        </tr>
+                    </thead>
+                    <!-- partie body -->
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Python</td>
+                            <td>app web</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>php</td>
+                            <td>app web</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>javascript</td>
+                            <td>app web</td>
+                        </tr>
+                    </tbody>
+                    <!--partie footer-->
+                    <tfoot>     <!--affiche au milieu le texte-->
+                        <tr>
+                            <th>
+                                <span class="material-icons" aria-hidden="true">
+                                    lightbulb
+                                    </span>
+                                classements</th>
+                            <th>langage</th>
+                            <th>type</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        
+
+    </main>
+
+
+    <footer>
+        <p>&copy; - UNDER - 2021</p>
+    </footer>
+</body>
+</html>
